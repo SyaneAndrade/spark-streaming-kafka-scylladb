@@ -15,9 +15,7 @@ import com.datastax.spark.connector.cql.CassandraConnectorConf
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.cassandra._
 import org.apache.spark.sql.streaming.OutputMode
-
-
-
+import example.spark.kafka.config.MetaInf
 
 object Initializer extends App {
 
@@ -25,13 +23,13 @@ object Initializer extends App {
     .appName("SparkKafkaScylla")
     .getOrCreate()
     .setCassandraConf("scylla",
-      Map(CassandraConnectorConf.ConnectionHostParam.name -> "Teste Cluster"))
+      Map(CassandraConnectorConf.ConnectionHostParam.name -> MetaInf.scyllaCluster))
 
 
   val sparkReaderStream = spark.readStream
     .format("kafka")
-    .option("kafka.bootstrap.servers", "localhost:9092")
-    .option("subscribe", "CLIENTE")
+    .option("kafka.bootstrap.servers", MetaInf.kafkaEnd)
+    .option("subscribe", MetaInf.kafkaTopic)
     .load()
     .selectExpr("CAST(key AS STRING) AS symbol",
       "CAST(value AS STRING) AS data",
@@ -42,9 +40,9 @@ object Initializer extends App {
     .format("example.spark.kafka.scyllaDB.ScyllaSinkProvider")
     .outputMode(OutputMode.Append)
     .options(Map(
-      "cluster" -> "Test Cluster",
-      "keyspace" -> "example_spark",
-      "table" -> "dadosclient",
+      "cluster" -> MetaInf.scyllaCluster,
+      "keyspace" -> MetaInf.scyllakeyspace,
+      "table" -> MetaInf.scyllaNameTable,
       "checkpointLocation" -> "/tmp/checkpoints"
     )
     )
