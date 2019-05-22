@@ -7,7 +7,7 @@
 		revision="0.1"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20190521182138"/>
+		date="20190521195326"/>
 	<dependencies>
 		<module organisation="org.apache.spark" name="spark-streaming-kafka-0-10_2.11">
 			<revision name="2.3.0" status="release" pubdate="20180222123422" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="122">
@@ -15,7 +15,7 @@
 				<metadata-artifact status="no" details="" size="84528" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-streaming-kafka-0-10_2.11/ivy-2.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-kafka-0-10_2.11/2.3.0/spark-streaming-kafka-0-10_2.11-2.3.0.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-streaming-kafka-0-10_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="31191" time="1534" location="/home/spark/.ivy2/cache/org.apache.spark/spark-streaming-kafka-0-10_2.11/srcs/spark-streaming-kafka-0-10_2.11-2.3.0-sources.jar">
+					<artifact name="spark-streaming-kafka-0-10_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="31191" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-streaming-kafka-0-10_2.11/srcs/spark-streaming-kafka-0-10_2.11-2.3.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-kafka-0-10_2.11/2.3.0/spark-streaming-kafka-0-10_2.11-2.3.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -33,25 +33,49 @@
 				</artifacts>
 			</revision>
 		</module>
+		<module organisation="org.apache.spark" name="spark-sql-kafka-0-10_2.11">
+			<revision name="2.3.0" status="release" pubdate="20180222123127" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="48">
+				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="86543" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-sql-kafka-0-10_2.11/ivy-2.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-sql-kafka-0-10_2.11/2.3.0/spark-sql-kafka-0-10_2.11-2.3.0.pom"/>
+				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="spark-sql-kafka-0-10_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="52281" time="1139" location="/home/spark/.ivy2/cache/org.apache.spark/spark-sql-kafka-0-10_2.11/srcs/spark-sql-kafka-0-10_2.11-2.3.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-sql-kafka-0-10_2.11/2.3.0/spark-sql-kafka-0-10_2.11-2.3.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="org.apache.kafka" name="kafka-clients">
 			<revision name="0.10.0.1" status="release" pubdate="20160804054125" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://kafka.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="76">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3276" time="0" location="/home/spark/.ivy2/cache/org.apache.kafka/kafka-clients/ivy-0.10.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/kafka/kafka-clients/0.10.0.1/kafka-clients-0.10.0.1.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="0.10.0.1" rev-constraint-default="0.10.0.1" rev-constraint-dynamic="0.10.0.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="kafka-clients" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="556890" time="850" location="/home/spark/.ivy2/cache/org.apache.kafka/kafka-clients/srcs/kafka-clients-0.10.0.1-sources.jar">
+					<artifact name="kafka-clients" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="556890" time="0" location="/home/spark/.ivy2/cache/org.apache.kafka/kafka-clients/srcs/kafka-clients-0.10.0.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/kafka/kafka-clients/0.10.0.1/kafka-clients-0.10.0.1-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
+		<module organisation="xml-apis" name="xml-apis">
+			<revision name="1.3.04" status="release" pubdate="20061222053752" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xml.apache.org/commons/components/external/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="44">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3060" time="0" location="/home/spark/.ivy2/cache/xml-apis/xml-apis/ivy-1.3.04.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.pom"/>
+				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.3.04" rev-constraint-default="1.3.04" rev-constraint-dynamic="1.3.04" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="xml-apis" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="527816" time="0" location="/home/spark/.ivy2/cache/xml-apis/xml-apis/srcs/xml-apis-1.3.04-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="com.datastax.spark" name="spark-cassandra-connector_2.11">
-			<revision name="2.3.0" status="release" pubdate="20180517141709" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/datastax/spark-cassandra-connector" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="31">
+			<revision name="2.3.0" status="release" pubdate="20180517141709" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/datastax/spark-cassandra-connector" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="30">
 				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="26984" time="0" location="/home/spark/.ivy2/cache/com.datastax.spark/spark-cassandra-connector_2.11/ivy-2.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/datastax/spark/spark-cassandra-connector_2.11/2.3.0/spark-cassandra-connector_2.11-2.3.0.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-cassandra-connector_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="248143" time="868" location="/home/spark/.ivy2/cache/com.datastax.spark/spark-cassandra-connector_2.11/srcs/spark-cassandra-connector_2.11-2.3.0-sources.jar">
+					<artifact name="spark-cassandra-connector_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="248143" time="0" location="/home/spark/.ivy2/cache/com.datastax.spark/spark-cassandra-connector_2.11/srcs/spark-cassandra-connector_2.11-2.3.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/datastax/spark/spark-cassandra-connector_2.11/2.3.0/spark-cassandra-connector_2.11-2.3.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -75,7 +99,7 @@
 				<metadata-artifact status="no" details="" size="83965" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-sql_2.11/ivy-2.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.11/2.3.0/spark-sql_2.11-2.3.0.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-sql_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1105023" time="2561" location="/home/spark/.ivy2/cache/org.apache.spark/spark-sql_2.11/srcs/spark-sql_2.11-2.3.0-sources.jar">
+					<artifact name="spark-sql_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1105023" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-sql_2.11/srcs/spark-sql_2.11-2.3.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.11/2.3.0/spark-sql_2.11-2.3.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -87,7 +111,7 @@
 				<metadata-artifact status="no" details="" size="10212" time="0" location="/home/spark/.ivy2/cache/org.apache.arrow/arrow-vector/ivy-0.8.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/arrow/arrow-vector/0.8.0/arrow-vector-0.8.0.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="0.8.0" rev-constraint-default="0.8.0" rev-constraint-dynamic="0.8.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="arrow-vector" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="694066" time="1090" location="/home/spark/.ivy2/cache/org.apache.arrow/arrow-vector/srcs/arrow-vector-0.8.0-sources.jar">
+					<artifact name="arrow-vector" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="694066" time="0" location="/home/spark/.ivy2/cache/org.apache.arrow/arrow-vector/srcs/arrow-vector-0.8.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/arrow/arrow-vector/0.8.0/arrow-vector-0.8.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -99,19 +123,19 @@
 				<metadata-artifact status="no" details="" size="7341" time="0" location="/home/spark/.ivy2/cache/com.carrotsearch/hppc/ivy-0.7.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/carrotsearch/hppc/0.7.2/hppc-0.7.2.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="0.7.2" rev-constraint-default="0.7.2" rev-constraint-dynamic="0.7.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="hppc" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="738908" time="957" location="/home/spark/.ivy2/cache/com.carrotsearch/hppc/srcs/hppc-0.7.2-sources.jar">
+					<artifact name="hppc" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="738908" time="0" location="/home/spark/.ivy2/cache/com.carrotsearch/hppc/srcs/hppc-0.7.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/carrotsearch/hppc/0.7.2/hppc-0.7.2-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
-			<revision name="2.7.9" status="release" pubdate="20170204111844" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson-core" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
+			<revision name="2.7.9" status="release" pubdate="20170204111844" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson-core" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="39">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="7216" time="0" location="/home/spark/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.7.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.7.9/jackson-core-2.7.9.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.7.9" rev-constraint-default="2.7.9" rev-constraint-dynamic="2.7.9" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jackson-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="266605" time="957" location="/home/spark/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/srcs/jackson-core-2.7.9-sources.jar">
+					<artifact name="jackson-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="266605" time="0" location="/home/spark/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/srcs/jackson-core-2.7.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.7.9/jackson-core-2.7.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -123,7 +147,7 @@
 				<metadata-artifact status="no" details="" size="6647" time="0" location="/home/spark/.ivy2/cache/joda-time/joda-time/ivy-2.9.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/joda-time/joda-time/2.9.9/joda-time-2.9.9.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.9.9" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="joda-time" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="778815" time="1017" location="/home/spark/.ivy2/cache/joda-time/joda-time/srcs/joda-time-2.9.9-sources.jar">
+					<artifact name="joda-time" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="778815" time="0" location="/home/spark/.ivy2/cache/joda-time/joda-time/srcs/joda-time-2.9.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.9.9/joda-time-2.9.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -147,7 +171,7 @@
 				<metadata-artifact status="no" details="" size="8778" time="0" location="/home/spark/.ivy2/cache/org.apache.arrow/arrow-memory/ivy-0.8.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/arrow/arrow-memory/0.8.0/arrow-memory-0.8.0.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="0.8.0" rev-constraint-default="0.8.0" rev-constraint-dynamic="0.8.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="arrow-memory" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="63011" time="710" location="/home/spark/.ivy2/cache/org.apache.arrow/arrow-memory/srcs/arrow-memory-0.8.0-sources.jar">
+					<artifact name="arrow-memory" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="63011" time="0" location="/home/spark/.ivy2/cache/org.apache.arrow/arrow-memory/srcs/arrow-memory-0.8.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/arrow/arrow-memory/0.8.0/arrow-memory-0.8.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -159,19 +183,19 @@
 				<metadata-artifact status="no" details="" size="5377" time="0" location="/home/spark/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="slf4j-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="55539" time="692" location="/home/spark/.ivy2/cache/org.slf4j/slf4j-api/srcs/slf4j-api-1.7.25-sources.jar">
+					<artifact name="slf4j-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="55539" time="0" location="/home/spark/.ivy2/cache/org.slf4j/slf4j-api/srcs/slf4j-api-1.7.25-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.google.code.findbugs" name="jsr305">
-			<revision name="3.0.2" status="release" pubdate="20170330215548" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://findbugs.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="37">
+			<revision name="3.0.2" status="release" pubdate="20170330215548" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://findbugs.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="36">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3268" time="0" location="/home/spark/.ivy2/cache/com.google.code.findbugs/jsr305/ivy-3.0.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="3.0.2" rev-constraint-default="3.0.2" rev-constraint-dynamic="3.0.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jsr305" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="18102" time="795" location="/home/spark/.ivy2/cache/com.google.code.findbugs/jsr305/srcs/jsr305-3.0.2-sources.jar">
+					<artifact name="jsr305" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="18102" time="0" location="/home/spark/.ivy2/cache/com.google.code.findbugs/jsr305/srcs/jsr305-3.0.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -183,7 +207,7 @@
 				<metadata-artifact status="no" details="" size="21845" time="0" location="/home/spark/.ivy2/cache/org.apache.orc/orc-mapreduce/ivy-1.4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/orc/orc-mapreduce/1.4.1/orc-mapreduce-1.4.1.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="orc-mapreduce" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="36772" time="703" location="/home/spark/.ivy2/cache/org.apache.orc/orc-mapreduce/srcs/orc-mapreduce-1.4.1-sources.jar">
+					<artifact name="orc-mapreduce" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="36772" time="0" location="/home/spark/.ivy2/cache/org.apache.orc/orc-mapreduce/srcs/orc-mapreduce-1.4.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/orc/orc-mapreduce/1.4.1/orc-mapreduce-1.4.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -195,7 +219,7 @@
 				<metadata-artifact status="no" details="" size="21056" time="0" location="/home/spark/.ivy2/cache/org.apache.orc/orc-core/ivy-1.4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/orc/orc-core/1.4.1/orc-core-1.4.1.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="orc-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="269715" time="777" location="/home/spark/.ivy2/cache/org.apache.orc/orc-core/srcs/orc-core-1.4.1-sources.jar">
+					<artifact name="orc-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="269715" time="0" location="/home/spark/.ivy2/cache/org.apache.orc/orc-core/srcs/orc-core-1.4.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/orc/orc-core/1.4.1/orc-core-1.4.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -207,7 +231,7 @@
 				<metadata-artifact status="no" details="" size="82556" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-streaming_2.11/ivy-2.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.11/2.3.0/spark-streaming_2.11-2.3.0.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-streaming_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="258463" time="746" location="/home/spark/.ivy2/cache/org.apache.spark/spark-streaming_2.11/srcs/spark-streaming_2.11-2.3.0-sources.jar">
+					<artifact name="spark-streaming_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="258463" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-streaming_2.11/srcs/spark-streaming_2.11-2.3.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.11/2.3.0/spark-streaming_2.11-2.3.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -238,12 +262,12 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.arrow" name="arrow-format">
-			<revision name="0.8.0" status="release" pubdate="20171217211920" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+			<revision name="0.8.0" status="release" pubdate="20171217211920" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
 				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="8899" time="0" location="/home/spark/.ivy2/cache/org.apache.arrow/arrow-format/ivy-0.8.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/arrow/arrow-format/0.8.0/arrow-format-0.8.0.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="0.8.0" rev-constraint-default="0.8.0" rev-constraint-dynamic="0.8.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="arrow-format" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="38130" time="757" location="/home/spark/.ivy2/cache/org.apache.arrow/arrow-format/srcs/arrow-format-0.8.0-sources.jar">
+					<artifact name="arrow-format" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="38130" time="0" location="/home/spark/.ivy2/cache/org.apache.arrow/arrow-format/srcs/arrow-format-0.8.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/arrow/arrow-format/0.8.0/arrow-format-0.8.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -255,19 +279,19 @@
 				<metadata-artifact status="no" details="" size="3225" time="0" location="/home/spark/.ivy2/cache/com.vlkan/flatbuffers/ivy-1.2.0-3f79e055.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/vlkan/flatbuffers/1.2.0-3f79e055/flatbuffers-1.2.0-3f79e055.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.2.0-3f79e055" rev-constraint-default="1.2.0-3f79e055" rev-constraint-dynamic="1.2.0-3f79e055" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="flatbuffers" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="10059" time="706" location="/home/spark/.ivy2/cache/com.vlkan/flatbuffers/srcs/flatbuffers-1.2.0-3f79e055-sources.jar">
+					<artifact name="flatbuffers" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="10059" time="0" location="/home/spark/.ivy2/cache/com.vlkan/flatbuffers/srcs/flatbuffers-1.2.0-3f79e055-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/vlkan/flatbuffers/1.2.0-3f79e055/flatbuffers-1.2.0-3f79e055-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.apache.spark" name="spark-catalyst_2.11">
-			<revision name="2.3.0" status="release" pubdate="20180222123142" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+			<revision name="2.3.0" status="release" pubdate="20180222123142" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
 				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="80562" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/ivy-2.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.3.0/spark-catalyst_2.11-2.3.0.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-catalyst_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="939396" time="901" location="/home/spark/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/srcs/spark-catalyst_2.11-2.3.0-sources.jar">
+					<artifact name="spark-catalyst_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="939396" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/srcs/spark-catalyst_2.11-2.3.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.3.0/spark-catalyst_2.11-2.3.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -279,19 +303,19 @@
 				<metadata-artifact status="no" details="" size="3593" time="0" location="/home/spark/.ivy2/cache/org.antlr/antlr4-runtime/ivy-4.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="4.7" rev-constraint-default="4.7" rev-constraint-dynamic="4.7" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="antlr4-runtime" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="313156" time="739" location="/home/spark/.ivy2/cache/org.antlr/antlr4-runtime/srcs/antlr4-runtime-4.7-sources.jar">
+					<artifact name="antlr4-runtime" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="313156" time="0" location="/home/spark/.ivy2/cache/org.antlr/antlr4-runtime/srcs/antlr4-runtime-4.7-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.apache.spark" name="spark-sketch_2.11">
-			<revision name="2.3.0" status="release" pubdate="20180222123007" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="42">
+			<revision name="2.3.0" status="release" pubdate="20180222123007" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="41">
 				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="77915" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-sketch_2.11/ivy-2.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.11/2.3.0/spark-sketch_2.11-2.3.0.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-sketch_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="24712" time="815" location="/home/spark/.ivy2/cache/org.apache.spark/spark-sketch_2.11/srcs/spark-sketch_2.11-2.3.0-sources.jar">
+					<artifact name="spark-sketch_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="24712" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-sketch_2.11/srcs/spark-sketch_2.11-2.3.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.11/2.3.0/spark-sketch_2.11-2.3.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -303,7 +327,7 @@
 				<metadata-artifact status="no" details="" size="96615" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-core_2.11/ivy-2.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.3.0/spark-core_2.11-2.3.0.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-core_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1839644" time="1153" location="/home/spark/.ivy2/cache/org.apache.spark/spark-core_2.11/srcs/spark-core_2.11-2.3.0-sources.jar">
+					<artifact name="spark-core_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1839644" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-core_2.11/srcs/spark-core_2.11-2.3.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.3.0/spark-core_2.11-2.3.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -315,7 +339,7 @@
 				<metadata-artifact status="no" details="" size="3446" time="0" location="/home/spark/.ivy2/cache/net.sf.py4j/py4j/ivy-0.10.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sf/py4j/py4j/0.10.6/py4j-0.10.6.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="0.10.6" rev-constraint-default="0.10.6" rev-constraint-dynamic="0.10.6" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="py4j" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="118733" time="808" location="/home/spark/.ivy2/cache/net.sf.py4j/py4j/srcs/py4j-0.10.6-sources.jar">
+					<artifact name="py4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="118733" time="0" location="/home/spark/.ivy2/cache/net.sf.py4j/py4j/srcs/py4j-0.10.6-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sf/py4j/py4j/0.10.6/py4j-0.10.6-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -339,19 +363,19 @@
 				<metadata-artifact status="no" details="" size="5424" time="0" location="/home/spark/.ivy2/cache/io.dropwizard.metrics/metrics-json/ivy-3.1.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-json/3.1.5/metrics-json-3.1.5.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="3.1.5" rev-constraint-default="3.1.5" rev-constraint-dynamic="3.1.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="metrics-json" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="3482" time="709" location="/home/spark/.ivy2/cache/io.dropwizard.metrics/metrics-json/srcs/metrics-json-3.1.5-sources.jar">
+					<artifact name="metrics-json" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3482" time="0" location="/home/spark/.ivy2/cache/io.dropwizard.metrics/metrics-json/srcs/metrics-json-3.1.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-json/3.1.5/metrics-json-3.1.5-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="io.dropwizard.metrics" name="metrics-jvm">
-			<revision name="3.1.5" status="release" pubdate="20170602110001" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="39">
+			<revision name="3.1.5" status="release" pubdate="20170602110001" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="38">
 				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="5156" time="0" location="/home/spark/.ivy2/cache/io.dropwizard.metrics/metrics-jvm/ivy-3.1.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-jvm/3.1.5/metrics-jvm-3.1.5.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="3.1.5" rev-constraint-default="3.1.5" rev-constraint-dynamic="3.1.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="metrics-jvm" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="8752" time="707" location="/home/spark/.ivy2/cache/io.dropwizard.metrics/metrics-jvm/srcs/metrics-jvm-3.1.5-sources.jar">
+					<artifact name="metrics-jvm" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="8752" time="0" location="/home/spark/.ivy2/cache/io.dropwizard.metrics/metrics-jvm/srcs/metrics-jvm-3.1.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-jvm/3.1.5/metrics-jvm-3.1.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -375,7 +399,7 @@
 				<metadata-artifact status="no" details="" size="7196" time="0" location="/home/spark/.ivy2/cache/io.netty/netty/ivy-3.9.9.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty/3.9.9.Final/netty-3.9.9.Final.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="3.9.9.Final" rev-constraint-default="3.9.9.Final" rev-constraint-dynamic="3.9.9.Final" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="netty" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1156341" time="1194" location="/home/spark/.ivy2/cache/io.netty/netty/srcs/netty-3.9.9.Final-sources.jar">
+					<artifact name="netty" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1156341" time="0" location="/home/spark/.ivy2/cache/io.netty/netty/srcs/netty-3.9.9.Final-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty/3.9.9.Final/netty-3.9.9.Final-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -387,7 +411,7 @@
 				<metadata-artifact status="no" details="" size="2967" time="0" location="/home/spark/.ivy2/cache/org.json4s/json4s-jackson_2.11/ivy-3.2.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.11/3.2.11/json4s-jackson_2.11-3.2.11.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="3.2.11" rev-constraint-default="3.2.11" rev-constraint-dynamic="3.2.11" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="json4s-jackson_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="7083" time="872" location="/home/spark/.ivy2/cache/org.json4s/json4s-jackson_2.11/srcs/json4s-jackson_2.11-3.2.11-sources.jar">
+					<artifact name="json4s-jackson_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="7083" time="0" location="/home/spark/.ivy2/cache/org.json4s/json4s-jackson_2.11/srcs/json4s-jackson_2.11-3.2.11-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.11/3.2.11/json4s-jackson_2.11-3.2.11-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -399,7 +423,7 @@
 				<metadata-artifact status="no" details="" size="3088" time="0" location="/home/spark/.ivy2/cache/org.json4s/json4s-core_2.11/ivy-3.2.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.11/3.2.11/json4s-core_2.11-3.2.11.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="3.2.11" rev-constraint-default="3.2.11" rev-constraint-dynamic="3.2.11" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="json4s-core_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="39377" time="801" location="/home/spark/.ivy2/cache/org.json4s/json4s-core_2.11/srcs/json4s-core_2.11-3.2.11-sources.jar">
+					<artifact name="json4s-core_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="39377" time="0" location="/home/spark/.ivy2/cache/org.json4s/json4s-core_2.11/srcs/json4s-core_2.11-3.2.11-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.11/3.2.11/json4s-core_2.11-3.2.11-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -411,7 +435,7 @@
 				<metadata-artifact status="no" details="" size="2648" time="0" location="/home/spark/.ivy2/cache/org.json4s/json4s-ast_2.11/ivy-3.2.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.2.11/json4s-ast_2.11-3.2.11.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="3.2.11" rev-constraint-default="3.2.11" rev-constraint-dynamic="3.2.11" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="json4s-ast_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="7279" time="708" location="/home/spark/.ivy2/cache/org.json4s/json4s-ast_2.11/srcs/json4s-ast_2.11-3.2.11-sources.jar">
+					<artifact name="json4s-ast_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="7279" time="0" location="/home/spark/.ivy2/cache/org.json4s/json4s-ast_2.11/srcs/json4s-ast_2.11-3.2.11-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.2.11/json4s-ast_2.11-3.2.11-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -447,7 +471,7 @@
 				<metadata-artifact status="no" details="" size="2877" time="0" location="/home/spark/.ivy2/cache/com.github.luben/zstd-jni/ivy-1.3.2-2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/luben/zstd-jni/1.3.2-2/zstd-jni-1.3.2-2.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.3.2-2" rev-constraint-default="1.3.2-2" rev-constraint-dynamic="1.3.2-2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="zstd-jni" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="13053" time="884" location="/home/spark/.ivy2/cache/com.github.luben/zstd-jni/srcs/zstd-jni-1.3.2-2-sources.jar">
+					<artifact name="zstd-jni" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="13053" time="0" location="/home/spark/.ivy2/cache/com.github.luben/zstd-jni/srcs/zstd-jni-1.3.2-2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/luben/zstd-jni/1.3.2-2/zstd-jni-1.3.2-2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -459,7 +483,7 @@
 				<metadata-artifact status="no" details="" size="2736" time="0" location="/home/spark/.ivy2/cache/org.lz4/lz4-java/ivy-1.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/lz4/lz4-java/1.4.0/lz4-java-1.4.0.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.4.0" rev-constraint-default="1.4.0" rev-constraint-dynamic="1.4.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="lz4-java" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="59248" time="738" location="/home/spark/.ivy2/cache/org.lz4/lz4-java/srcs/lz4-java-1.4.0-sources.jar">
+					<artifact name="lz4-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="59248" time="0" location="/home/spark/.ivy2/cache/org.lz4/lz4-java/srcs/lz4-java-1.4.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/lz4/lz4-java/1.4.0/lz4-java-1.4.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -471,7 +495,7 @@
 				<metadata-artifact status="no" details="" size="3450" time="0" location="/home/spark/.ivy2/cache/org.xerial.snappy/snappy-java/ivy-1.1.2.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.2.6/snappy-java-1.1.2.6.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.1.2.6" rev-constraint-default="1.1.2.6" rev-constraint-dynamic="1.1.2.6" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="snappy-java" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1049625" time="2386" location="/home/spark/.ivy2/cache/org.xerial.snappy/snappy-java/srcs/snappy-java-1.1.2.6-sources.jar">
+					<artifact name="snappy-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1049625" time="0" location="/home/spark/.ivy2/cache/org.xerial.snappy/snappy-java/srcs/snappy-java-1.1.2.6-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.2.6/snappy-java-1.1.2.6-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -495,7 +519,7 @@
 				<metadata-artifact status="no" details="" size="5275" time="0" location="/home/spark/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.7.16.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.16/jcl-over-slf4j-1.7.16.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.7.16" rev-constraint-default="1.7.16" rev-constraint-dynamic="1.7.16" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jcl-over-slf4j" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="23213" time="715" location="/home/spark/.ivy2/cache/org.slf4j/jcl-over-slf4j/srcs/jcl-over-slf4j-1.7.16-sources.jar">
+					<artifact name="jcl-over-slf4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="23213" time="0" location="/home/spark/.ivy2/cache/org.slf4j/jcl-over-slf4j/srcs/jcl-over-slf4j-1.7.16-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.16/jcl-over-slf4j-1.7.16-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -519,7 +543,7 @@
 				<metadata-artifact status="no" details="" size="4276" time="0" location="/home/spark/.ivy2/cache/javax.servlet/javax.servlet-api/ivy-3.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="javax.servlet-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="223386" time="1463" location="/home/spark/.ivy2/cache/javax.servlet/javax.servlet-api/srcs/javax.servlet-api-3.1.0-sources.jar">
+					<artifact name="javax.servlet-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="223386" time="0" location="/home/spark/.ivy2/cache/javax.servlet/javax.servlet-api/srcs/javax.servlet-api-3.1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -531,7 +555,7 @@
 				<metadata-artifact status="no" details="" size="6396" time="0" location="/home/spark/.ivy2/cache/net.java.dev.jets3t/jets3t/ivy-0.9.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/java/dev/jets3t/jets3t/0.9.4/jets3t-0.9.4.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="0.9.4" rev-constraint-default="0.9.4" rev-constraint-dynamic="0.9.4" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jets3t" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1599338" time="1078" location="/home/spark/.ivy2/cache/net.java.dev.jets3t/jets3t/srcs/jets3t-0.9.4-sources.jar">
+					<artifact name="jets3t" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1599338" time="0" location="/home/spark/.ivy2/cache/net.java.dev.jets3t/jets3t/srcs/jets3t-0.9.4-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/java/dev/jets3t/jets3t/0.9.4/jets3t-0.9.4-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -543,19 +567,19 @@
 				<metadata-artifact status="no" details="" size="3409" time="0" location="/home/spark/.ivy2/cache/com.jamesmurty.utils/java-xmlbuilder/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/jamesmurty/utils/java-xmlbuilder/1.1/java-xmlbuilder-1.1.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="java-xmlbuilder" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="15529" time="829" location="/home/spark/.ivy2/cache/com.jamesmurty.utils/java-xmlbuilder/srcs/java-xmlbuilder-1.1-sources.jar">
+					<artifact name="java-xmlbuilder" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="15529" time="0" location="/home/spark/.ivy2/cache/com.jamesmurty.utils/java-xmlbuilder/srcs/java-xmlbuilder-1.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/jamesmurty/utils/java-xmlbuilder/1.1/java-xmlbuilder-1.1-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.bouncycastle" name="bcprov-jdk15on">
-			<revision name="1.52" status="release" pubdate="20150308205210" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.bouncycastle.org/java.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="47">
+			<revision name="1.52" status="release" pubdate="20150308205210" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.bouncycastle.org/java.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="46">
 				<license name="Bouncy Castle Licence" url="http://www.bouncycastle.org/licence.html"/>
 				<metadata-artifact status="no" details="" size="2676" time="0" location="/home/spark/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/ivy-1.52.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.52/bcprov-jdk15on-1.52.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.52" rev-constraint-default="1.52" rev-constraint-dynamic="1.52" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="bcprov-jdk15on" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="2843525" time="1625" location="/home/spark/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/srcs/bcprov-jdk15on-1.52-sources.jar">
+					<artifact name="bcprov-jdk15on" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2843525" time="0" location="/home/spark/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/srcs/bcprov-jdk15on-1.52-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.52/bcprov-jdk15on-1.52-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -567,19 +591,19 @@
 				<metadata-artifact status="no" details="" size="2644" time="0" location="/home/spark/.ivy2/cache/javax.activation/activation/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="activation" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="75650" time="837" location="/home/spark/.ivy2/cache/javax.activation/activation/srcs/activation-1.1.1-sources.jar">
+					<artifact name="activation" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="75650" time="0" location="/home/spark/.ivy2/cache/javax.activation/activation/srcs/activation-1.1.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="commons-codec" name="commons-codec">
-			<revision name="1.12" status="release" pubdate="20190209054904" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-codec/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+			<revision name="1.12" status="release" pubdate="20190209054904" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-codec/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
 				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="14324" time="0" location="/home/spark/.ivy2/cache/commons-codec/commons-codec/ivy-1.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.12/commons-codec-1.12.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.12" rev-constraint-default="1.12" rev-constraint-dynamic="1.12" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="commons-codec" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="344285" time="814" location="/home/spark/.ivy2/cache/commons-codec/commons-codec/srcs/commons-codec-1.12-sources.jar">
+					<artifact name="commons-codec" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="344285" time="0" location="/home/spark/.ivy2/cache/commons-codec/commons-codec/srcs/commons-codec-1.12-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.12/commons-codec-1.12-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -591,7 +615,7 @@
 				<metadata-artifact status="no" details="" size="9800" time="0" location="/home/spark/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="4.5" rev-constraint-default="4.5" rev-constraint-dynamic="4.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="httpclient" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="706468" time="1034" location="/home/spark/.ivy2/cache/org.apache.httpcomponents/httpclient/srcs/httpclient-4.5-sources.jar">
+					<artifact name="httpclient" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="706468" time="0" location="/home/spark/.ivy2/cache/org.apache.httpcomponents/httpclient/srcs/httpclient-4.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -603,7 +627,7 @@
 				<metadata-artifact status="no" details="" size="7617" time="0" location="/home/spark/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="4.4.1" rev-constraint-default="4.4.1" rev-constraint-dynamic="4.4.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="httpcore" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="405124" time="1006" location="/home/spark/.ivy2/cache/org.apache.httpcomponents/httpcore/srcs/httpcore-4.4.1-sources.jar">
+					<artifact name="httpcore" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="405124" time="0" location="/home/spark/.ivy2/cache/org.apache.httpcomponents/httpcore/srcs/httpcore-4.4.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -615,19 +639,19 @@
 				<metadata-artifact status="no" details="" size="79107" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-unsafe_2.11/ivy-2.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.11/2.3.0/spark-unsafe_2.11-2.3.0.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-unsafe_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="42430" time="718" location="/home/spark/.ivy2/cache/org.apache.spark/spark-unsafe_2.11/srcs/spark-unsafe_2.11-2.3.0-sources.jar">
+					<artifact name="spark-unsafe_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="42430" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-unsafe_2.11/srcs/spark-unsafe_2.11-2.3.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.11/2.3.0/spark-unsafe_2.11-2.3.0-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.apache.spark" name="spark-network-shuffle_2.11">
-			<revision name="2.3.0" status="release" pubdate="20180222123213" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="41">
+			<revision name="2.3.0" status="release" pubdate="20180222123213" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
 				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="79344" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-network-shuffle_2.11/ivy-2.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.11/2.3.0/spark-network-shuffle_2.11-2.3.0.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-network-shuffle_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="44192" time="768" location="/home/spark/.ivy2/cache/org.apache.spark/spark-network-shuffle_2.11/srcs/spark-network-shuffle_2.11-2.3.0-sources.jar">
+					<artifact name="spark-network-shuffle_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="44192" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-network-shuffle_2.11/srcs/spark-network-shuffle_2.11-2.3.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.11/2.3.0/spark-network-shuffle_2.11-2.3.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -639,7 +663,7 @@
 				<metadata-artifact status="no" details="" size="80126" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-network-common_2.11/ivy-2.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.11/2.3.0/spark-network-common_2.11-2.3.0.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-network-common_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="137000" time="810" location="/home/spark/.ivy2/cache/org.apache.spark/spark-network-common_2.11/srcs/spark-network-common_2.11-2.3.0-sources.jar">
+					<artifact name="spark-network-common_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="137000" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-network-common_2.11/srcs/spark-network-common_2.11-2.3.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.11/2.3.0/spark-network-common_2.11-2.3.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -651,19 +675,19 @@
 				<metadata-artifact status="no" details="" size="14887" time="0" location="/home/spark/.ivy2/cache/org.apache.commons/commons-crypto/ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-crypto/1.0.0/commons-crypto-1.0.0.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="commons-crypto" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="94099" time="707" location="/home/spark/.ivy2/cache/org.apache.commons/commons-crypto/srcs/commons-crypto-1.0.0-sources.jar">
+					<artifact name="commons-crypto" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="94099" time="0" location="/home/spark/.ivy2/cache/org.apache.commons/commons-crypto/srcs/commons-crypto-1.0.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-crypto/1.0.0/commons-crypto-1.0.0-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.apache.commons" name="commons-lang3">
-			<revision name="3.5" status="release" pubdate="20161013125341" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-lang/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
+			<revision name="3.5" status="release" pubdate="20161013125341" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-lang/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
 				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="12365" time="0" location="/home/spark/.ivy2/cache/org.apache.commons/commons-lang3/ivy-3.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="3.5" rev-constraint-default="3.5" rev-constraint-dynamic="3.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="commons-lang3" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="526211" time="908" location="/home/spark/.ivy2/cache/org.apache.commons/commons-lang3/srcs/commons-lang3-3.5-sources.jar">
+					<artifact name="commons-lang3" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="526211" time="0" location="/home/spark/.ivy2/cache/org.apache.commons/commons-lang3/srcs/commons-lang3-3.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -675,7 +699,7 @@
 				<metadata-artifact status="no" details="" size="21061" time="0" location="/home/spark/.ivy2/cache/io.netty/netty-all/ivy-4.1.17.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-all/4.1.17.Final/netty-all-4.1.17.Final.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="4.1.17.Final" rev-constraint-default="4.1.17.Final" rev-constraint-dynamic="4.1.17.Final" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="netty-all" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="3003665" time="1567" location="/home/spark/.ivy2/cache/io.netty/netty-all/srcs/netty-all-4.1.17.Final-sources.jar">
+					<artifact name="netty-all" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3003665" time="0" location="/home/spark/.ivy2/cache/io.netty/netty-all/srcs/netty-all-4.1.17.Final-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-all/4.1.17.Final/netty-all-4.1.17.Final-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -687,7 +711,7 @@
 				<metadata-artifact status="no" details="" size="79242" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-kvstore_2.11/ivy-2.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-kvstore_2.11/2.3.0/spark-kvstore_2.11-2.3.0.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-kvstore_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="33996" time="717" location="/home/spark/.ivy2/cache/org.apache.spark/spark-kvstore_2.11/srcs/spark-kvstore_2.11-2.3.0-sources.jar">
+					<artifact name="spark-kvstore_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="33996" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-kvstore_2.11/srcs/spark-kvstore_2.11-2.3.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-kvstore_2.11/2.3.0/spark-kvstore_2.11-2.3.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -699,7 +723,7 @@
 				<metadata-artifact status="no" details="" size="8938" time="0" location="/home/spark/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.6.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.6.7.1/jackson-databind-2.6.7.1.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.6.7.1" rev-constraint-default="2.6.7.1" rev-constraint-dynamic="2.6.7.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jackson-databind" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="859606" time="1041" location="/home/spark/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/srcs/jackson-databind-2.6.7.1-sources.jar">
+					<artifact name="jackson-databind" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="859606" time="0" location="/home/spark/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/srcs/jackson-databind-2.6.7.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.6.7.1/jackson-databind-2.6.7.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -711,7 +735,7 @@
 				<metadata-artifact status="no" details="" size="80783" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-launcher_2.11/ivy-2.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.11/2.3.0/spark-launcher_2.11-2.3.0.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-launcher_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="54251" time="793" location="/home/spark/.ivy2/cache/org.apache.spark/spark-launcher_2.11/srcs/spark-launcher_2.11-2.3.0-sources.jar">
+					<artifact name="spark-launcher_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="54251" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-launcher_2.11/srcs/spark-launcher_2.11-2.3.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.11/2.3.0/spark-launcher_2.11-2.3.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -723,7 +747,7 @@
 				<metadata-artifact status="no" details="" size="5260" time="0" location="/home/spark/.ivy2/cache/org.slf4j/jul-to-slf4j/ivy-1.7.16.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.16/jul-to-slf4j-1.7.16.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.7.16" rev-constraint-default="1.7.16" rev-constraint-dynamic="1.7.16" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jul-to-slf4j" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="4872" time="725" location="/home/spark/.ivy2/cache/org.slf4j/jul-to-slf4j/srcs/jul-to-slf4j-1.7.16-sources.jar">
+					<artifact name="jul-to-slf4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4872" time="0" location="/home/spark/.ivy2/cache/org.slf4j/jul-to-slf4j/srcs/jul-to-slf4j-1.7.16-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.16/jul-to-slf4j-1.7.16-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -735,7 +759,7 @@
 				<metadata-artifact status="no" details="" size="5276" time="0" location="/home/spark/.ivy2/cache/org.slf4j/slf4j-log4j12/ivy-1.7.16.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.7.16/slf4j-log4j12-1.7.16.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.7.16" rev-constraint-default="1.7.16" rev-constraint-dynamic="1.7.16" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="slf4j-log4j12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="11191" time="697" location="/home/spark/.ivy2/cache/org.slf4j/slf4j-log4j12/srcs/slf4j-log4j12-1.7.16-sources.jar">
+					<artifact name="slf4j-log4j12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="11191" time="0" location="/home/spark/.ivy2/cache/org.slf4j/slf4j-log4j12/srcs/slf4j-log4j12-1.7.16-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.7.16/slf4j-log4j12-1.7.16-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -747,7 +771,7 @@
 				<metadata-artifact status="no" details="" size="39086" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-client/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-client/2.6.5/hadoop-client-2.6.5.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="hadoop-client" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="23762" time="708" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-client/srcs/hadoop-client-2.6.5-sources.jar">
+					<artifact name="hadoop-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="23762" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-client/srcs/hadoop-client-2.6.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-client/2.6.5/hadoop-client-2.6.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -759,7 +783,7 @@
 				<metadata-artifact status="no" details="" size="36649" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-jobclient/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-jobclient/2.6.5/hadoop-mapreduce-client-jobclient-2.6.5.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="hadoop-mapreduce-client-jobclient" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="45670" time="764" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-jobclient/srcs/hadoop-mapreduce-client-jobclient-2.6.5-sources.jar">
+					<artifact name="hadoop-mapreduce-client-jobclient" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="45670" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-jobclient/srcs/hadoop-mapreduce-client-jobclient-2.6.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-jobclient/2.6.5/hadoop-mapreduce-client-jobclient-2.6.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -771,7 +795,7 @@
 				<metadata-artifact status="no" details="" size="36151" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-app/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-app/2.6.5/hadoop-mapreduce-client-app-2.6.5.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="hadoop-mapreduce-client-app" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="311614" time="798" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-app/srcs/hadoop-mapreduce-client-app-2.6.5-sources.jar">
+					<artifact name="hadoop-mapreduce-client-app" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="311614" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-app/srcs/hadoop-mapreduce-client-app-2.6.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-app/2.6.5/hadoop-mapreduce-client-app-2.6.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -783,7 +807,7 @@
 				<metadata-artifact status="no" details="" size="34906" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.6.5/hadoop-mapreduce-client-shuffle-2.6.5.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="hadoop-mapreduce-client-shuffle" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="42226" time="709" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/srcs/hadoop-mapreduce-client-shuffle-2.6.5-sources.jar">
+					<artifact name="hadoop-mapreduce-client-shuffle" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="42226" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/srcs/hadoop-mapreduce-client-shuffle-2.6.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.6.5/hadoop-mapreduce-client-shuffle-2.6.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -795,7 +819,7 @@
 				<metadata-artifact status="no" details="" size="38352" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-yarn-server-nodemanager/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.6.5/hadoop-yarn-server-nodemanager-2.6.5.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="hadoop-yarn-server-nodemanager" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="356609" time="1245" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-yarn-server-nodemanager/srcs/hadoop-yarn-server-nodemanager-2.6.5-sources.jar">
+					<artifact name="hadoop-yarn-server-nodemanager" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="356609" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-yarn-server-nodemanager/srcs/hadoop-yarn-server-nodemanager-2.6.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.6.5/hadoop-yarn-server-nodemanager-2.6.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -813,12 +837,12 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-common">
-			<revision name="2.6.5" status="release" pubdate="20161002162418" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="38">
+			<revision name="2.6.5" status="release" pubdate="20161002162418" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="37">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="34888" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-common/2.6.5/hadoop-mapreduce-client-common-2.6.5.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="hadoop-mapreduce-client-common" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="272151" time="771" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/srcs/hadoop-mapreduce-client-common-2.6.5-sources.jar">
+					<artifact name="hadoop-mapreduce-client-common" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="272151" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/srcs/hadoop-mapreduce-client-common-2.6.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-common/2.6.5/hadoop-mapreduce-client-common-2.6.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -830,7 +854,7 @@
 				<metadata-artifact status="no" details="" size="34768" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-yarn-client/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-client/2.6.5/hadoop-yarn-client-2.6.5.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="hadoop-yarn-client" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="102965" time="839" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-yarn-client/srcs/hadoop-yarn-client-2.6.5-sources.jar">
+					<artifact name="hadoop-yarn-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="102965" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-yarn-client/srcs/hadoop-yarn-client-2.6.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-client/2.6.5/hadoop-yarn-client-2.6.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -842,14 +866,14 @@
 				<metadata-artifact status="no" details="" size="35915" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-yarn-server-common/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-common/2.6.5/hadoop-yarn-server-common-2.6.5.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="hadoop-yarn-server-common" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="155080" time="748" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-yarn-server-common/srcs/hadoop-yarn-server-common-2.6.5-sources.jar">
+					<artifact name="hadoop-yarn-server-common" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="155080" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-yarn-server-common/srcs/hadoop-yarn-server-common-2.6.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-common/2.6.5/hadoop-yarn-server-common-2.6.5-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.fusesource.leveldbjni" name="leveldbjni-all">
-			<revision name="1.8" status="release" pubdate="20131017061826" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="33">
+			<revision name="1.8" status="release" pubdate="20131017061826" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
 				<license name="The BSD 3-Clause License" url="http://www.opensource.org/licenses/BSD-3-Clause"/>
 				<metadata-artifact status="no" details="" size="4642" time="0" location="/home/spark/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/ivy-1.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.8" rev-constraint-default="1.8" rev-constraint-dynamic="1.8" callerrev="0.1"/>
@@ -879,7 +903,7 @@
 				<metadata-artifact status="no" details="" size="3175" time="0" location="/home/spark/.ivy2/cache/com.twitter/chill_2.11/ivy-0.8.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/chill_2.11/0.8.4/chill_2.11-0.8.4.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="0.8.4" rev-constraint-default="0.8.4" rev-constraint-dynamic="0.8.4" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="chill_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="35126" time="707" location="/home/spark/.ivy2/cache/com.twitter/chill_2.11/srcs/chill_2.11-0.8.4-sources.jar">
+					<artifact name="chill_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="35126" time="0" location="/home/spark/.ivy2/cache/com.twitter/chill_2.11/srcs/chill_2.11-0.8.4-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/twitter/chill_2.11/0.8.4/chill_2.11-0.8.4-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -891,7 +915,7 @@
 				<metadata-artifact status="no" details="" size="2893" time="0" location="/home/spark/.ivy2/cache/com.twitter/chill-java/ivy-0.8.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/chill-java/0.8.4/chill-java-0.8.4.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="0.8.4" rev-constraint-default="0.8.4" rev-constraint-dynamic="0.8.4" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="chill-java" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="60224" time="815" location="/home/spark/.ivy2/cache/com.twitter/chill-java/srcs/chill-java-0.8.4-sources.jar">
+					<artifact name="chill-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="60224" time="0" location="/home/spark/.ivy2/cache/com.twitter/chill-java/srcs/chill-java-0.8.4-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/twitter/chill-java/0.8.4/chill-java-0.8.4-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -903,7 +927,7 @@
 				<metadata-artifact status="no" details="" size="4130" time="0" location="/home/spark/.ivy2/cache/com.esotericsoftware/kryo-shaded/ivy-3.0.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/esotericsoftware/kryo-shaded/3.0.3/kryo-shaded-3.0.3.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="3.0.3" rev-constraint-default="3.0.3" rev-constraint-dynamic="3.0.3" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="kryo-shaded" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="191107" time="744" location="/home/spark/.ivy2/cache/com.esotericsoftware/kryo-shaded/srcs/kryo-shaded-3.0.3-sources.jar">
+					<artifact name="kryo-shaded" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="191107" time="0" location="/home/spark/.ivy2/cache/com.esotericsoftware/kryo-shaded/srcs/kryo-shaded-3.0.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/esotericsoftware/kryo-shaded/3.0.3/kryo-shaded-3.0.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -915,7 +939,7 @@
 				<metadata-artifact status="no" details="" size="3342" time="0" location="/home/spark/.ivy2/cache/org.objenesis/objenesis/ivy-2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/objenesis/objenesis/2.1/objenesis-2.1.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.1" rev-constraint-default="2.1" rev-constraint-dynamic="2.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="objenesis" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="44014" time="717" location="/home/spark/.ivy2/cache/org.objenesis/objenesis/srcs/objenesis-2.1-sources.jar">
+					<artifact name="objenesis" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="44014" time="0" location="/home/spark/.ivy2/cache/org.objenesis/objenesis/srcs/objenesis-2.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/objenesis/objenesis/2.1/objenesis-2.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -927,7 +951,7 @@
 				<metadata-artifact status="no" details="" size="3271" time="0" location="/home/spark/.ivy2/cache/com.esotericsoftware/minlog/ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="minlog" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="2458" time="755" location="/home/spark/.ivy2/cache/com.esotericsoftware/minlog/srcs/minlog-1.3.0-sources.jar">
+					<artifact name="minlog" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2458" time="0" location="/home/spark/.ivy2/cache/com.esotericsoftware/minlog/srcs/minlog-1.3.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -958,7 +982,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.avro" name="avro">
-			<revision name="1.7.7" status="release" pubdate="20140718130856" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://avro.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="44">
+			<revision name="1.7.7" status="release" pubdate="20140718130856" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://avro.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="43">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="11109" time="0" location="/home/spark/.ivy2/cache/org.apache.avro/avro/ivy-1.7.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/avro/avro/1.7.7/avro-1.7.7.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="0.1"/>
@@ -970,7 +994,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11">
-			<revision name="1.0.4" status="release" pubdate="20150430070747" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="35">
+			<revision name="1.0.4" status="release" pubdate="20150430070747" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="34">
 				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
 				<metadata-artifact status="no" details="" size="2929" time="0" location="/home/spark/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/ivy-1.0.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.0.4" rev-constraint-default="1.0.4" rev-constraint-dynamic="1.0.4" callerrev="0.1"/>
@@ -982,24 +1006,24 @@
 			</revision>
 		</module>
 		<module organisation="net.iharder" name="base64">
-			<revision name="2.3.8" status="release" pubdate="20100326184244" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://iharder.net/base64/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+			<revision name="2.3.8" status="release" pubdate="20100326184244" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://iharder.net/base64/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
 				<license name="Public domain"/>
 				<metadata-artifact status="no" details="" size="3061" time="0" location="/home/spark/.ivy2/cache/net.iharder/base64/ivy-2.3.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/iharder/base64/2.3.8/base64-2.3.8.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.3.8" rev-constraint-default="2.3.8" rev-constraint-dynamic="2.3.8" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="base64" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="17670" time="698" location="/home/spark/.ivy2/cache/net.iharder/base64/srcs/base64-2.3.8-sources.jar">
+					<artifact name="base64" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="17670" time="0" location="/home/spark/.ivy2/cache/net.iharder/base64/srcs/base64-2.3.8-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/iharder/base64/2.3.8/base64-2.3.8-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.apache.spark" name="spark-tags_2.11">
-			<revision name="2.3.0" status="release" pubdate="20180222123040" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+			<revision name="2.3.0" status="release" pubdate="20180222123040" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
 				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="77634" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-tags_2.11/ivy-2.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.11/2.3.0/spark-tags_2.11-2.3.0.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-tags_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="14780" time="707" location="/home/spark/.ivy2/cache/org.apache.spark/spark-tags_2.11/srcs/spark-tags_2.11-2.3.0-sources.jar">
+					<artifact name="spark-tags_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="14780" time="0" location="/home/spark/.ivy2/cache/org.apache.spark/spark-tags_2.11/srcs/spark-tags_2.11-2.3.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.11/2.3.0/spark-tags_2.11-2.3.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1018,12 +1042,12 @@
 			</revision>
 		</module>
 		<module organisation="org.codehaus.janino" name="janino">
-			<revision name="3.0.8" status="release" pubdate="20171204143130" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+			<revision name="3.0.8" status="release" pubdate="20171204143130" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
 				<license name="New BSD License" url="https://raw.githubusercontent.com/janino-compiler/janino/master/LICENSE"/>
 				<metadata-artifact status="no" details="" size="4177" time="0" location="/home/spark/.ivy2/cache/org.codehaus.janino/janino/ivy-3.0.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/janino/janino/3.0.8/janino-3.0.8.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="3.0.8" rev-constraint-default="3.0.8" rev-constraint-dynamic="3.0.8" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="janino" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="385721" time="1002" location="/home/spark/.ivy2/cache/org.codehaus.janino/janino/srcs/janino-3.0.8-sources.jar">
+					<artifact name="janino" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="385721" time="0" location="/home/spark/.ivy2/cache/org.codehaus.janino/janino/srcs/janino-3.0.8-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/janino/janino/3.0.8/janino-3.0.8-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1035,7 +1059,7 @@
 				<metadata-artifact status="no" details="" size="3744" time="0" location="/home/spark/.ivy2/cache/org.codehaus.janino/commons-compiler/ivy-3.0.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/janino/commons-compiler/3.0.8/commons-compiler-3.0.8.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="3.0.8" rev-constraint-default="3.0.8" rev-constraint-dynamic="3.0.8" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="commons-compiler" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="56425" time="722" location="/home/spark/.ivy2/cache/org.codehaus.janino/commons-compiler/srcs/commons-compiler-3.0.8-sources.jar">
+					<artifact name="commons-compiler" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="56425" time="0" location="/home/spark/.ivy2/cache/org.codehaus.janino/commons-compiler/srcs/commons-compiler-3.0.8-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/janino/commons-compiler/3.0.8/commons-compiler-3.0.8-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1047,7 +1071,7 @@
 				<metadata-artifact status="no" details="" size="35227" time="0" location="/home/spark/.ivy2/cache/org.glassfish.jersey.containers/jersey-container-servlet/ivy-2.22.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet/2.22.2/jersey-container-servlet-2.22.2.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.22.2" rev-constraint-default="2.22.2" rev-constraint-dynamic="2.22.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jersey-container-servlet" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="15919" time="697" location="/home/spark/.ivy2/cache/org.glassfish.jersey.containers/jersey-container-servlet/srcs/jersey-container-servlet-2.22.2-sources.jar">
+					<artifact name="jersey-container-servlet" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="15919" time="0" location="/home/spark/.ivy2/cache/org.glassfish.jersey.containers/jersey-container-servlet/srcs/jersey-container-servlet-2.22.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet/2.22.2/jersey-container-servlet-2.22.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1059,7 +1083,7 @@
 				<metadata-artifact status="no" details="" size="35363" time="0" location="/home/spark/.ivy2/cache/org.glassfish.jersey.containers/jersey-container-servlet-core/ivy-2.22.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet-core/2.22.2/jersey-container-servlet-core-2.22.2.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.22.2" rev-constraint-default="2.22.2" rev-constraint-dynamic="2.22.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jersey-container-servlet-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="62750" time="709" location="/home/spark/.ivy2/cache/org.glassfish.jersey.containers/jersey-container-servlet-core/srcs/jersey-container-servlet-core-2.22.2-sources.jar">
+					<artifact name="jersey-container-servlet-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="62750" time="0" location="/home/spark/.ivy2/cache/org.glassfish.jersey.containers/jersey-container-servlet-core/srcs/jersey-container-servlet-core-2.22.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet-core/2.22.2/jersey-container-servlet-core-2.22.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1071,7 +1095,7 @@
 				<metadata-artifact status="no" details="" size="36509" time="0" location="/home/spark/.ivy2/cache/org.glassfish.jersey.core/jersey-server/ivy-2.22.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-server/2.22.2/jersey-server-2.22.2.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.22.2" rev-constraint-default="2.22.2" rev-constraint-dynamic="2.22.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jersey-server" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="757324" time="1074" location="/home/spark/.ivy2/cache/org.glassfish.jersey.core/jersey-server/srcs/jersey-server-2.22.2-sources.jar">
+					<artifact name="jersey-server" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="757324" time="0" location="/home/spark/.ivy2/cache/org.glassfish.jersey.core/jersey-server/srcs/jersey-server-2.22.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-server/2.22.2/jersey-server-2.22.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1083,7 +1107,7 @@
 				<metadata-artifact status="no" details="" size="3200" time="0" location="/home/spark/.ivy2/cache/javax.validation/validation-api/ivy-1.1.0.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.1.0.Final" rev-constraint-default="1.1.0.Final" rev-constraint-dynamic="1.1.0.Final" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="validation-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="94671" time="988" location="/home/spark/.ivy2/cache/javax.validation/validation-api/srcs/validation-api-1.1.0.Final-sources.jar">
+					<artifact name="validation-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="94671" time="0" location="/home/spark/.ivy2/cache/javax.validation/validation-api/srcs/validation-api-1.1.0.Final-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1095,7 +1119,7 @@
 				<metadata-artifact status="no" details="" size="35308" time="0" location="/home/spark/.ivy2/cache/org.glassfish.jersey.core/jersey-client/ivy-2.22.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-client/2.22.2/jersey-client-2.22.2.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.22.2" rev-constraint-default="2.22.2" rev-constraint-dynamic="2.22.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jersey-client" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="128842" time="844" location="/home/spark/.ivy2/cache/org.glassfish.jersey.core/jersey-client/srcs/jersey-client-2.22.2-sources.jar">
+					<artifact name="jersey-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="128842" time="0" location="/home/spark/.ivy2/cache/org.glassfish.jersey.core/jersey-client/srcs/jersey-client-2.22.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-client/2.22.2/jersey-client-2.22.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1107,7 +1131,7 @@
 				<metadata-artifact status="no" details="" size="35538" time="0" location="/home/spark/.ivy2/cache/org.glassfish.jersey.media/jersey-media-jaxb/ivy-2.22.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-jaxb/2.22.2/jersey-media-jaxb-2.22.2.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.22.2" rev-constraint-default="2.22.2" rev-constraint-dynamic="2.22.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jersey-media-jaxb" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="53475" time="687" location="/home/spark/.ivy2/cache/org.glassfish.jersey.media/jersey-media-jaxb/srcs/jersey-media-jaxb-2.22.2-sources.jar">
+					<artifact name="jersey-media-jaxb" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="53475" time="0" location="/home/spark/.ivy2/cache/org.glassfish.jersey.media/jersey-media-jaxb/srcs/jersey-media-jaxb-2.22.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-jaxb/2.22.2/jersey-media-jaxb-2.22.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1119,7 +1143,7 @@
 				<metadata-artifact status="no" details="" size="36007" time="0" location="/home/spark/.ivy2/cache/org.glassfish.jersey.core/jersey-common/ivy-2.22.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-common/2.22.2/jersey-common-2.22.2.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.22.2" rev-constraint-default="2.22.2" rev-constraint-dynamic="2.22.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jersey-common" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="599014" time="1021" location="/home/spark/.ivy2/cache/org.glassfish.jersey.core/jersey-common/srcs/jersey-common-2.22.2-sources.jar">
+					<artifact name="jersey-common" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="599014" time="0" location="/home/spark/.ivy2/cache/org.glassfish.jersey.core/jersey-common/srcs/jersey-common-2.22.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-common/2.22.2/jersey-common-2.22.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1131,21 +1155,21 @@
 				<metadata-artifact status="no" details="" size="25607" time="0" location="/home/spark/.ivy2/cache/org.glassfish.hk2/hk2-locator/ivy-2.4.0-b34.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-locator/2.4.0-b34/hk2-locator-2.4.0-b34.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.4.0-b34" rev-constraint-default="2.4.0-b34" rev-constraint-dynamic="2.4.0-b34" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="hk2-locator" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="128049" time="733" location="/home/spark/.ivy2/cache/org.glassfish.hk2/hk2-locator/srcs/hk2-locator-2.4.0-b34-sources.jar">
+					<artifact name="hk2-locator" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="128049" time="0" location="/home/spark/.ivy2/cache/org.glassfish.hk2/hk2-locator/srcs/hk2-locator-2.4.0-b34-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-locator/2.4.0-b34/hk2-locator-2.4.0-b34-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.javassist" name="javassist">
-			<revision name="3.18.1-GA" status="release" pubdate="20130830095932" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.javassist.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="34">
+			<revision name="3.18.1-GA" status="release" pubdate="20130830095932" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.javassist.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="33">
 				<license name="MPL 1.1" url="http://www.mozilla.org/MPL/MPL-1.1.html"/>
 				<license name="LGPL 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
 				<license name="Apache License 2.0" url="http://www.apache.org/licenses/"/>
 				<metadata-artifact status="no" details="" size="3199" time="0" location="/home/spark/.ivy2/cache/org.javassist/javassist/ivy-3.18.1-GA.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="3.18.1-GA" rev-constraint-default="3.18.1-GA" rev-constraint-dynamic="3.18.1-GA" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="javassist" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="513427" time="1102" location="/home/spark/.ivy2/cache/org.javassist/javassist/srcs/javassist-3.18.1-GA-sources.jar">
+					<artifact name="javassist" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="513427" time="0" location="/home/spark/.ivy2/cache/org.javassist/javassist/srcs/javassist-3.18.1-GA-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1157,7 +1181,7 @@
 				<metadata-artifact status="no" details="" size="26032" time="0" location="/home/spark/.ivy2/cache/org.glassfish.hk2.external/javax.inject/ivy-2.4.0-b34.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/javax.inject/2.4.0-b34/javax.inject-2.4.0-b34.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.4.0-b34" rev-constraint-default="2.4.0-b34" rev-constraint-dynamic="2.4.0-b34" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="javax.inject" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="13157" time="767" location="/home/spark/.ivy2/cache/org.glassfish.hk2.external/javax.inject/srcs/javax.inject-2.4.0-b34-sources.jar">
+					<artifact name="javax.inject" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="13157" time="0" location="/home/spark/.ivy2/cache/org.glassfish.hk2.external/javax.inject/srcs/javax.inject-2.4.0-b34-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/javax.inject/2.4.0-b34/javax.inject-2.4.0-b34-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1169,7 +1193,7 @@
 				<metadata-artifact status="no" details="" size="25305" time="0" location="/home/spark/.ivy2/cache/org.glassfish.hk2/hk2-api/ivy-2.4.0-b34.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-api/2.4.0-b34/hk2-api-2.4.0-b34.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.4.0-b34" rev-constraint-default="2.4.0-b34" rev-constraint-dynamic="2.4.0-b34" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="hk2-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="257019" time="715" location="/home/spark/.ivy2/cache/org.glassfish.hk2/hk2-api/srcs/hk2-api-2.4.0-b34-sources.jar">
+					<artifact name="hk2-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="257019" time="0" location="/home/spark/.ivy2/cache/org.glassfish.hk2/hk2-api/srcs/hk2-api-2.4.0-b34-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-api/2.4.0-b34/hk2-api-2.4.0-b34-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1181,7 +1205,7 @@
 				<metadata-artifact status="no" details="" size="25953" time="0" location="/home/spark/.ivy2/cache/org.glassfish.hk2.external/aopalliance-repackaged/ivy-2.4.0-b34.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/aopalliance-repackaged/2.4.0-b34/aopalliance-repackaged-2.4.0-b34.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.4.0-b34" rev-constraint-default="2.4.0-b34" rev-constraint-dynamic="2.4.0-b34" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="aopalliance-repackaged" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="23639" time="759" location="/home/spark/.ivy2/cache/org.glassfish.hk2.external/aopalliance-repackaged/srcs/aopalliance-repackaged-2.4.0-b34-sources.jar">
+					<artifact name="aopalliance-repackaged" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="23639" time="0" location="/home/spark/.ivy2/cache/org.glassfish.hk2.external/aopalliance-repackaged/srcs/aopalliance-repackaged-2.4.0-b34-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/aopalliance-repackaged/2.4.0-b34/aopalliance-repackaged-2.4.0-b34-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1193,7 +1217,7 @@
 				<metadata-artifact status="no" details="" size="24902" time="0" location="/home/spark/.ivy2/cache/org.glassfish.hk2/hk2-utils/ivy-2.4.0-b34.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-utils/2.4.0-b34/hk2-utils-2.4.0-b34.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.4.0-b34" rev-constraint-default="2.4.0-b34" rev-constraint-dynamic="2.4.0-b34" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="hk2-utils" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="88644" time="734" location="/home/spark/.ivy2/cache/org.glassfish.hk2/hk2-utils/srcs/hk2-utils-2.4.0-b34-sources.jar">
+					<artifact name="hk2-utils" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="88644" time="0" location="/home/spark/.ivy2/cache/org.glassfish.hk2/hk2-utils/srcs/hk2-utils-2.4.0-b34-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-utils/2.4.0-b34/hk2-utils-2.4.0-b34-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1205,7 +1229,7 @@
 				<metadata-artifact status="no" details="" size="3175" time="0" location="/home/spark/.ivy2/cache/org.glassfish.hk2/osgi-resource-locator/ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="osgi-resource-locator" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="13010" time="678" location="/home/spark/.ivy2/cache/org.glassfish.hk2/osgi-resource-locator/srcs/osgi-resource-locator-1.0.1-sources.jar">
+					<artifact name="osgi-resource-locator" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="13010" time="0" location="/home/spark/.ivy2/cache/org.glassfish.hk2/osgi-resource-locator/srcs/osgi-resource-locator-1.0.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1217,7 +1241,7 @@
 				<metadata-artifact status="no" details="" size="35222" time="0" location="/home/spark/.ivy2/cache/org.glassfish.jersey.bundles.repackaged/jersey-guava/ivy-2.22.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.22.2/jersey-guava-2.22.2.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.22.2" rev-constraint-default="2.22.2" rev-constraint-dynamic="2.22.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jersey-guava" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1308830" time="1159" location="/home/spark/.ivy2/cache/org.glassfish.jersey.bundles.repackaged/jersey-guava/srcs/jersey-guava-2.22.2-sources.jar">
+					<artifact name="jersey-guava" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1308830" time="0" location="/home/spark/.ivy2/cache/org.glassfish.jersey.bundles.repackaged/jersey-guava/srcs/jersey-guava-2.22.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.22.2/jersey-guava-2.22.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1229,7 +1253,7 @@
 				<metadata-artifact status="no" details="" size="4135" time="0" location="/home/spark/.ivy2/cache/javax.annotation/javax.annotation-api/ivy-1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="javax.annotation-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="42311" time="707" location="/home/spark/.ivy2/cache/javax.annotation/javax.annotation-api/srcs/javax.annotation-api-1.2-sources.jar">
+					<artifact name="javax.annotation-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="42311" time="0" location="/home/spark/.ivy2/cache/javax.annotation/javax.annotation-api/srcs/javax.annotation-api-1.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1242,7 +1266,7 @@
 				<metadata-artifact status="no" details="" size="4023" time="0" location="/home/spark/.ivy2/cache/javax.ws.rs/javax.ws.rs-api/ivy-2.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.0.1" rev-constraint-default="2.0.1" rev-constraint-dynamic="2.0.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="javax.ws.rs-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="265372" time="738" location="/home/spark/.ivy2/cache/javax.ws.rs/javax.ws.rs-api/srcs/javax.ws.rs-api-2.0.1-sources.jar">
+					<artifact name="javax.ws.rs-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="265372" time="0" location="/home/spark/.ivy2/cache/javax.ws.rs/javax.ws.rs-api/srcs/javax.ws.rs-api-2.0.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1254,7 +1278,7 @@
 				<metadata-artifact status="no" details="" size="4025" time="0" location="/home/spark/.ivy2/cache/net.razorvine/pyrolite/ivy-4.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/razorvine/pyrolite/4.13/pyrolite-4.13.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="4.13" rev-constraint-default="4.13" rev-constraint-dynamic="4.13" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="pyrolite" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="60914" time="828" location="/home/spark/.ivy2/cache/net.razorvine/pyrolite/srcs/pyrolite-4.13-sources.jar">
+					<artifact name="pyrolite" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="60914" time="0" location="/home/spark/.ivy2/cache/net.razorvine/pyrolite/srcs/pyrolite-4.13-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/razorvine/pyrolite/4.13/pyrolite-4.13-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1266,7 +1290,7 @@
 				<metadata-artifact status="no" details="" size="3655" time="0" location="/home/spark/.ivy2/cache/com.univocity/univocity-parsers/ivy-2.5.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/univocity/univocity-parsers/2.5.9/univocity-parsers-2.5.9.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.5.9" rev-constraint-default="2.5.9" rev-constraint-dynamic="2.5.9" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="univocity-parsers" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="366117" time="1410" location="/home/spark/.ivy2/cache/com.univocity/univocity-parsers/srcs/univocity-parsers-2.5.9-sources.jar">
+					<artifact name="univocity-parsers" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="366117" time="0" location="/home/spark/.ivy2/cache/com.univocity/univocity-parsers/srcs/univocity-parsers-2.5.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/univocity/univocity-parsers/2.5.9/univocity-parsers-2.5.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1278,7 +1302,7 @@
 				<metadata-artifact status="no" details="" size="4357" time="0" location="/home/spark/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-scala_2.11/ivy-2.6.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.11/2.6.7.1/jackson-module-scala_2.11-2.6.7.1.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.6.7.1" rev-constraint-default="2.6.7.1" rev-constraint-dynamic="2.6.7.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jackson-module-scala_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="52620" time="724" location="/home/spark/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-scala_2.11/srcs/jackson-module-scala_2.11-2.6.7.1-sources.jar">
+					<artifact name="jackson-module-scala_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="52620" time="0" location="/home/spark/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-scala_2.11/srcs/jackson-module-scala_2.11-2.6.7.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.11/2.6.7.1/jackson-module-scala_2.11-2.6.7.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1290,7 +1314,7 @@
 				<metadata-artifact status="no" details="" size="9428" time="0" location="/home/spark/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-paranamer/ivy-2.7.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-paranamer/2.7.9/jackson-module-paranamer-2.7.9.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.7.9" rev-constraint-default="2.7.9" rev-constraint-dynamic="2.7.9" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jackson-module-paranamer" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="7271" time="1315" location="/home/spark/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-paranamer/srcs/jackson-module-paranamer-2.7.9-sources.jar">
+					<artifact name="jackson-module-paranamer" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="7271" time="0" location="/home/spark/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-paranamer/srcs/jackson-module-paranamer-2.7.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-paranamer/2.7.9/jackson-module-paranamer-2.7.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1314,7 +1338,7 @@
 				<metadata-artifact status="no" details="" size="6495" time="0" location="/home/spark/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.6.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.6.7/jackson-annotations-2.6.7.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.6.7" rev-constraint-default="2.6.7" rev-constraint-dynamic="2.6.7" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jackson-annotations" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="50255" time="836" location="/home/spark/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/srcs/jackson-annotations-2.6.7-sources.jar">
+					<artifact name="jackson-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="50255" time="0" location="/home/spark/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/srcs/jackson-annotations-2.6.7-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.6.7/jackson-annotations-2.6.7-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1350,42 +1374,20 @@
 				<metadata-artifact status="no" details="" size="34545" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-core/2.6.5/hadoop-mapreduce-client-core-2.6.5.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="hadoop-mapreduce-client-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1072575" time="2557" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/srcs/hadoop-mapreduce-client-core-2.6.5-sources.jar">
+					<artifact name="hadoop-mapreduce-client-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1072575" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/srcs/hadoop-mapreduce-client-core-2.6.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-core/2.6.5/hadoop-mapreduce-client-core-2.6.5-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-hdfs">
-			<revision name="2.6.5" status="release" pubdate="20161002161335" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
+			<revision name="2.6.5" status="release" pubdate="20161002161335" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="37833" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-hdfs/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-hdfs/2.6.5/hadoop-hdfs-2.6.5.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="hadoop-hdfs" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="2821733" time="1379" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-hdfs/srcs/hadoop-hdfs-2.6.5-sources.jar">
+					<artifact name="hadoop-hdfs" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2821733" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-hdfs/srcs/hadoop-hdfs-2.6.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-hdfs/2.6.5/hadoop-hdfs-2.6.5-sources.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="xerces" name="xercesImpl">
-			<revision name="2.9.1" status="release" pubdate="20081001151919" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xerces.apache.org/xerces2-j" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
-				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="3198" time="0" location="/home/spark/.ivy2/cache/xerces/xercesImpl/ivy-2.9.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.pom"/>
-				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.9.1" rev-constraint-default="2.9.1" rev-constraint-dynamic="2.9.1" callerrev="0.1"/>
-				<artifacts>
-					<artifact name="xercesImpl" type="src" ext="jar" extra-classifier="sources" status="failed" details="" size="0" time="0"/>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="xml-apis" name="xml-apis">
-			<revision name="1.3.04" status="release" pubdate="20061222053752" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xml.apache.org/commons/components/external/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="45">
-				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="3060" time="0" location="/home/spark/.ivy2/cache/xml-apis/xml-apis/ivy-1.3.04.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.pom"/>
-				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.3.04" rev-constraint-default="1.3.04" rev-constraint-dynamic="1.3.04" callerrev="0.1"/>
-				<artifacts>
-					<artifact name="xml-apis" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="527816" time="1678" location="/home/spark/.ivy2/cache/xml-apis/xml-apis/srcs/xml-apis-1.3.04-sources.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -1396,7 +1398,7 @@
 				<metadata-artifact status="no" details="" size="36092" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-yarn-common/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-common/2.6.5/hadoop-yarn-common-2.6.5.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="hadoop-yarn-common" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="814917" time="1676" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-yarn-common/srcs/hadoop-yarn-common-2.6.5-sources.jar">
+					<artifact name="hadoop-yarn-common" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="814917" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-yarn-common/srcs/hadoop-yarn-common-2.6.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-common/2.6.5/hadoop-yarn-common-2.6.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1445,20 +1447,20 @@
 				<metadata-artifact status="no" details="" size="3073" time="0" location="/home/spark/.ivy2/cache/org.codehaus.jackson/jackson-xc/ivy-1.9.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-xc/1.9.13/jackson-xc-1.9.13.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.9.13" rev-constraint-default="1.9.13" rev-constraint-dynamic="1.9.13" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jackson-xc" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="15831" time="943" location="/home/spark/.ivy2/cache/org.codehaus.jackson/jackson-xc/srcs/jackson-xc-1.9.13-sources.jar">
+					<artifact name="jackson-xc" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="15831" time="0" location="/home/spark/.ivy2/cache/org.codehaus.jackson/jackson-xc/srcs/jackson-xc-1.9.13-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-xc/1.9.13/jackson-xc-1.9.13-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.codehaus.jackson" name="jackson-jaxrs">
-			<revision name="1.9.13" status="release" pubdate="20130714200844" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jackson.codehaus.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+			<revision name="1.9.13" status="release" pubdate="20130714200844" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jackson.codehaus.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<license name="GNU Lesser General Public License (LGPL), Version 2.1" url="http://www.fsf.org/licensing/licenses/lgpl.txt"/>
 				<metadata-artifact status="no" details="" size="3075" time="0" location="/home/spark/.ivy2/cache/org.codehaus.jackson/jackson-jaxrs/ivy-1.9.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-jaxrs/1.9.13/jackson-jaxrs-1.9.13.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.9.13" rev-constraint-default="1.9.13" rev-constraint-dynamic="1.9.13" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jackson-jaxrs" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="11913" time="686" location="/home/spark/.ivy2/cache/org.codehaus.jackson/jackson-jaxrs/srcs/jackson-jaxrs-1.9.13-sources.jar">
+					<artifact name="jackson-jaxrs" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="11913" time="0" location="/home/spark/.ivy2/cache/org.codehaus.jackson/jackson-jaxrs/srcs/jackson-jaxrs-1.9.13-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-jaxrs/1.9.13/jackson-jaxrs-1.9.13-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1484,7 +1486,7 @@
 				<metadata-artifact status="no" details="" size="2653" time="0" location="/home/spark/.ivy2/cache/javax.xml.stream/stax-api/ivy-1.0-2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.0-2" rev-constraint-default="1.0-2" rev-constraint-dynamic="1.0-2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="stax-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="42699" time="703" location="/home/spark/.ivy2/cache/javax.xml.stream/stax-api/srcs/stax-api-1.0-2-sources.jar">
+					<artifact name="stax-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="42699" time="0" location="/home/spark/.ivy2/cache/javax.xml.stream/stax-api/srcs/stax-api-1.0-2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1496,7 +1498,7 @@
 				<metadata-artifact status="no" details="" size="31902" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-yarn-api/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-api/2.6.5/hadoop-yarn-api-2.6.5.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="hadoop-yarn-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="617345" time="1175" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-yarn-api/srcs/hadoop-yarn-api-2.6.5-sources.jar">
+					<artifact name="hadoop-yarn-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="617345" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-yarn-api/srcs/hadoop-yarn-api-2.6.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-api/2.6.5/hadoop-yarn-api-2.6.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1508,7 +1510,7 @@
 				<metadata-artifact status="no" details="" size="40168" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-common/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-common/2.6.5/hadoop-common-2.6.5.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="hadoop-common" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="2021169" time="1356" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-common/srcs/hadoop-common-2.6.5-sources.jar">
+					<artifact name="hadoop-common" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2021169" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-common/srcs/hadoop-common-2.6.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-common/2.6.5/hadoop-common-2.6.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1544,7 +1546,7 @@
 				<metadata-artifact status="no" details="" size="4559" time="0" location="/home/spark/.ivy2/cache/org.htrace/htrace-core/ivy-3.0.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/htrace/htrace-core/3.0.4/htrace-core-3.0.4.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="3.0.4" rev-constraint-default="3.0.4" rev-constraint-dynamic="3.0.4" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="htrace-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="26939" time="726" location="/home/spark/.ivy2/cache/org.htrace/htrace-core/srcs/htrace-core-3.0.4-sources.jar">
+					<artifact name="htrace-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="26939" time="0" location="/home/spark/.ivy2/cache/org.htrace/htrace-core/srcs/htrace-core-3.0.4-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/htrace/htrace-core/3.0.4/htrace-core-3.0.4-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1556,43 +1558,43 @@
 				<metadata-artifact status="no" details="" size="13579" time="0" location="/home/spark/.ivy2/cache/org.apache.curator/curator-recipes/ivy-2.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/curator/curator-recipes/2.6.0/curator-recipes-2.6.0.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="curator-recipes" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="143004" time="725" location="/home/spark/.ivy2/cache/org.apache.curator/curator-recipes/srcs/curator-recipes-2.6.0-sources.jar">
+					<artifact name="curator-recipes" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="143004" time="0" location="/home/spark/.ivy2/cache/org.apache.curator/curator-recipes/srcs/curator-recipes-2.6.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/curator/curator-recipes/2.6.0/curator-recipes-2.6.0-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-auth">
-			<revision name="2.6.5" status="release" pubdate="20161002160725" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
+			<revision name="2.6.5" status="release" pubdate="20161002160725" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="32556" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-auth/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-auth/2.6.5/hadoop-auth-2.6.5.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="hadoop-auth" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="75499" time="713" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-auth/srcs/hadoop-auth-2.6.5-sources.jar">
+					<artifact name="hadoop-auth" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="75499" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-auth/srcs/hadoop-auth-2.6.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-auth/2.6.5/hadoop-auth-2.6.5-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.apache.curator" name="curator-framework">
-			<revision name="2.6.0" status="release" pubdate="20140707200112" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+			<revision name="2.6.0" status="release" pubdate="20140707200112" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
 				<license name="The Apache Software License, Version 2.0" url="file:///home/spark/spark-streaming-kafka-scylladb/LICENSE"/>
 				<metadata-artifact status="no" details="" size="13427" time="0" location="/home/spark/.ivy2/cache/org.apache.curator/curator-framework/ivy-2.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/curator/curator-framework/2.6.0/curator-framework-2.6.0.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="curator-framework" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="117089" time="1284" location="/home/spark/.ivy2/cache/org.apache.curator/curator-framework/srcs/curator-framework-2.6.0-sources.jar">
+					<artifact name="curator-framework" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="117089" time="0" location="/home/spark/.ivy2/cache/org.apache.curator/curator-framework/srcs/curator-framework-2.6.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/curator/curator-framework/2.6.0/curator-framework-2.6.0-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.apache.curator" name="curator-client">
-			<revision name="2.6.0" status="release" pubdate="20140707200047" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="48">
+			<revision name="2.6.0" status="release" pubdate="20140707200047" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="47">
 				<license name="The Apache Software License, Version 2.0" url="file:///home/spark/spark-streaming-kafka-scylladb/LICENSE"/>
 				<metadata-artifact status="no" details="" size="13474" time="0" location="/home/spark/.ivy2/cache/org.apache.curator/curator-client/ivy-2.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/curator/curator-client/2.6.0/curator-client-2.6.0.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="curator-client" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="53044" time="908" location="/home/spark/.ivy2/cache/org.apache.curator/curator-client/srcs/curator-client-2.6.0-sources.jar">
+					<artifact name="curator-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="53044" time="0" location="/home/spark/.ivy2/cache/org.apache.curator/curator-client/srcs/curator-client-2.6.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/curator/curator-client/2.6.0/curator-client-2.6.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1603,7 +1605,7 @@
 				<metadata-artifact status="no" details="" size="4352" time="0" location="/home/spark/.ivy2/cache/org.apache.zookeeper/zookeeper/ivy-3.4.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="3.4.6" rev-constraint-default="3.4.6" rev-constraint-dynamic="3.4.6" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="zookeeper" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="554612" time="942" location="/home/spark/.ivy2/cache/org.apache.zookeeper/zookeeper/srcs/zookeeper-3.4.6-sources.jar">
+					<artifact name="zookeeper" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="554612" time="0" location="/home/spark/.ivy2/cache/org.apache.zookeeper/zookeeper/srcs/zookeeper-3.4.6-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1627,7 +1629,7 @@
 				<metadata-artifact status="no" details="" size="26789" time="0" location="/home/spark/.ivy2/cache/org.apache.directory.server/apacheds-kerberos-codec/ivy-2.0.0-M15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/directory/server/apacheds-kerberos-codec/2.0.0-M15/apacheds-kerberos-codec-2.0.0-M15.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.0.0-M15" rev-constraint-default="2.0.0-M15" rev-constraint-dynamic="2.0.0-M15" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="apacheds-kerberos-codec" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="726316" time="1286" location="/home/spark/.ivy2/cache/org.apache.directory.server/apacheds-kerberos-codec/srcs/apacheds-kerberos-codec-2.0.0-M15-sources.jar">
+					<artifact name="apacheds-kerberos-codec" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="726316" time="0" location="/home/spark/.ivy2/cache/org.apache.directory.server/apacheds-kerberos-codec/srcs/apacheds-kerberos-codec-2.0.0-M15-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/directory/server/apacheds-kerberos-codec/2.0.0-M15/apacheds-kerberos-codec-2.0.0-M15-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1639,19 +1641,19 @@
 				<metadata-artifact status="no" details="" size="14221" time="0" location="/home/spark/.ivy2/cache/org.apache.directory.api/api-util/ivy-1.0.0-M20.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.0.0-M20" rev-constraint-default="1.0.0-M20" rev-constraint-dynamic="1.0.0-M20" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="api-util" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="78219" time="728" location="/home/spark/.ivy2/cache/org.apache.directory.api/api-util/srcs/api-util-1.0.0-M20-sources.jar">
+					<artifact name="api-util" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="78219" time="0" location="/home/spark/.ivy2/cache/org.apache.directory.api/api-util/srcs/api-util-1.0.0-M20-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.apache.directory.api" name="api-asn1-api">
-			<revision name="1.0.0-M20" status="release" pubdate="20130814013000" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+			<revision name="1.0.0-M20" status="release" pubdate="20130814013000" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="15565" time="0" location="/home/spark/.ivy2/cache/org.apache.directory.api/api-asn1-api/ivy-1.0.0-M20.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/directory/api/api-asn1-api/1.0.0-M20/api-asn1-api-1.0.0-M20.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.0.0-M20" rev-constraint-default="1.0.0-M20" rev-constraint-dynamic="1.0.0-M20" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="api-asn1-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="21097" time="690" location="/home/spark/.ivy2/cache/org.apache.directory.api/api-asn1-api/srcs/api-asn1-api-1.0.0-M20-sources.jar">
+					<artifact name="api-asn1-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="21097" time="0" location="/home/spark/.ivy2/cache/org.apache.directory.api/api-asn1-api/srcs/api-asn1-api-1.0.0-M20-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/directory/api/api-asn1-api/1.0.0-M20/api-asn1-api-1.0.0-M20-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1663,7 +1665,7 @@
 				<metadata-artifact status="no" details="" size="25493" time="0" location="/home/spark/.ivy2/cache/org.apache.directory.server/apacheds-i18n/ivy-2.0.0-M15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/directory/server/apacheds-i18n/2.0.0-M15/apacheds-i18n-2.0.0-M15.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.0.0-M15" rev-constraint-default="2.0.0-M15" rev-constraint-dynamic="2.0.0-M15" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="apacheds-i18n" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="27976" time="708" location="/home/spark/.ivy2/cache/org.apache.directory.server/apacheds-i18n/srcs/apacheds-i18n-2.0.0-M15-sources.jar">
+					<artifact name="apacheds-i18n" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="27976" time="0" location="/home/spark/.ivy2/cache/org.apache.directory.server/apacheds-i18n/srcs/apacheds-i18n-2.0.0-M15-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/directory/server/apacheds-i18n/2.0.0-M15/apacheds-i18n-2.0.0-M15-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1675,14 +1677,14 @@
 				<metadata-artifact status="no" details="" size="3381" time="0" location="/home/spark/.ivy2/cache/com.google.code.gson/gson/ivy-2.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.2.4/gson-2.2.4.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.2.4" rev-constraint-default="2.2.4" rev-constraint-dynamic="2.2.4" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="gson" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="127562" time="1095" location="/home/spark/.ivy2/cache/com.google.code.gson/gson/srcs/gson-2.2.4-sources.jar">
+					<artifact name="gson" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="127562" time="0" location="/home/spark/.ivy2/cache/com.google.code.gson/gson/srcs/gson-2.2.4-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.2.4/gson-2.2.4-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.google.protobuf" name="protobuf-java">
-			<revision name="2.5.0" status="release" pubdate="20130307161811" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/protobuf" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="36">
+			<revision name="2.5.0" status="release" pubdate="20130307161811" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/protobuf" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="35">
 				<license name="New BSD license" url="http://www.opensource.org/licenses/bsd-license.php"/>
 				<metadata-artifact status="no" details="" size="3139" time="0" location="/home/spark/.ivy2/cache/com.google.protobuf/protobuf-java/ivy-2.5.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.5.0" rev-constraint-default="2.5.0" rev-constraint-dynamic="2.5.0" callerrev="0.1"/>
@@ -1694,7 +1696,7 @@
 			</revision>
 		</module>
 		<module organisation="org.codehaus.jackson" name="jackson-mapper-asl">
-			<revision name="1.9.13" status="release" pubdate="20130714200750" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jackson.codehaus.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="43">
+			<revision name="1.9.13" status="release" pubdate="20130714200750" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jackson.codehaus.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="42">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="2787" time="0" location="/home/spark/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/ivy-1.9.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.9.13" rev-constraint-default="1.9.13" rev-constraint-dynamic="1.9.13" callerrev="0.1"/>
@@ -1742,12 +1744,12 @@
 			</revision>
 		</module>
 		<module organisation="commons-lang" name="commons-lang">
-			<revision name="2.6" status="release" pubdate="20110116142147" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/lang/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
+			<revision name="2.6" status="release" pubdate="20110116142147" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/lang/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="6637" time="0" location="/home/spark/.ivy2/cache/commons-lang/commons-lang/ivy-2.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="commons-lang" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="372982" time="743" location="/home/spark/.ivy2/cache/commons-lang/commons-lang/srcs/commons-lang-2.6-sources.jar">
+					<artifact name="commons-lang" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="372982" time="0" location="/home/spark/.ivy2/cache/commons-lang/commons-lang/srcs/commons-lang-2.6-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1777,7 +1779,7 @@
 			</revision>
 		</module>
 		<module organisation="org.mortbay.jetty" name="jetty-util">
-			<revision name="6.1.26" status="release" pubdate="20101110133810" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="46">
+			<revision name="6.1.26" status="release" pubdate="20101110133810" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="45">
 				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
 				<metadata-artifact status="no" details="" size="6784" time="0" location="/home/spark/.ivy2/cache/org.mortbay.jetty/jetty-util/ivy-6.1.26.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26.pom"/>
@@ -1831,7 +1833,7 @@
 				<metadata-artifact status="no" details="" size="4094" time="0" location="/home/spark/.ivy2/cache/com.google.guava/guava/ivy-11.0.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/11.0.2/guava-11.0.2.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="11.0.2" rev-constraint-default="11.0.2" rev-constraint-dynamic="11.0.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="guava" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="943695" time="1068" location="/home/spark/.ivy2/cache/com.google.guava/guava/srcs/guava-11.0.2-sources.jar">
+					<artifact name="guava" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="943695" time="0" location="/home/spark/.ivy2/cache/com.google.guava/guava/srcs/guava-11.0.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/guava/guava/11.0.2/guava-11.0.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1843,7 +1845,7 @@
 				<metadata-artifact status="no" details="" size="28597" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-annotations/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-annotations/2.6.5/hadoop-annotations-2.6.5.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="hadoop-annotations" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="34557" time="806" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-annotations/srcs/hadoop-annotations-2.6.5-sources.jar">
+					<artifact name="hadoop-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="34557" time="0" location="/home/spark/.ivy2/cache/org.apache.hadoop/hadoop-annotations/srcs/hadoop-annotations-2.6.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-annotations/2.6.5/hadoop-annotations-2.6.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1855,7 +1857,7 @@
 				<metadata-artifact status="no" details="" size="5373" time="0" location="/home/spark/.ivy2/cache/io.dropwizard.metrics/metrics-graphite/ivy-3.1.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-graphite/3.1.5/metrics-graphite-3.1.5.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="3.1.5" rev-constraint-default="3.1.5" rev-constraint-dynamic="3.1.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="metrics-graphite" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="10770" time="1203" location="/home/spark/.ivy2/cache/io.dropwizard.metrics/metrics-graphite/srcs/metrics-graphite-3.1.5-sources.jar">
+					<artifact name="metrics-graphite" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="10770" time="0" location="/home/spark/.ivy2/cache/io.dropwizard.metrics/metrics-graphite/srcs/metrics-graphite-3.1.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-graphite/3.1.5/metrics-graphite-3.1.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1867,7 +1869,7 @@
 				<metadata-artifact status="no" details="" size="5135" time="0" location="/home/spark/.ivy2/cache/io.dropwizard.metrics/metrics-core/ivy-3.1.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-core/3.1.5/metrics-core-3.1.5.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="3.1.5" rev-constraint-default="3.1.5" rev-constraint-dynamic="3.1.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="metrics-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="54953" time="771" location="/home/spark/.ivy2/cache/io.dropwizard.metrics/metrics-core/srcs/metrics-core-3.1.5-sources.jar">
+					<artifact name="metrics-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="54953" time="0" location="/home/spark/.ivy2/cache/io.dropwizard.metrics/metrics-core/srcs/metrics-core-3.1.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-core/3.1.5/metrics-core-3.1.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1879,7 +1881,7 @@
 				<metadata-artifact status="no" details="" size="12135" time="0" location="/home/spark/.ivy2/cache/commons-beanutils/commons-beanutils/ivy-1.9.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.9.3" rev-constraint-default="1.9.3" rev-constraint-dynamic="1.9.3" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="commons-beanutils" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="314687" time="836" location="/home/spark/.ivy2/cache/commons-beanutils/commons-beanutils/srcs/commons-beanutils-1.9.3-sources.jar">
+					<artifact name="commons-beanutils" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="314687" time="0" location="/home/spark/.ivy2/cache/commons-beanutils/commons-beanutils/srcs/commons-beanutils-1.9.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1891,7 +1893,7 @@
 				<metadata-artifact status="no" details="" size="11113" time="0" location="/home/spark/.ivy2/cache/commons-collections/commons-collections/ivy-3.2.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="3.2.2" rev-constraint-default="3.2.2" rev-constraint-dynamic="3.2.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="commons-collections" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="646075" time="2011" location="/home/spark/.ivy2/cache/commons-collections/commons-collections/srcs/commons-collections-3.2.2-sources.jar">
+					<artifact name="commons-collections" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="646075" time="0" location="/home/spark/.ivy2/cache/commons-collections/commons-collections/srcs/commons-collections-3.2.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1903,7 +1905,7 @@
 				<metadata-artifact status="no" details="" size="19262" time="0" location="/home/spark/.ivy2/cache/io.airlift/aircompressor/ivy-0.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/airlift/aircompressor/0.8/aircompressor-0.8.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="0.8" rev-constraint-default="0.8" rev-constraint-dynamic="0.8" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="aircompressor" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="102108" time="815" location="/home/spark/.ivy2/cache/io.airlift/aircompressor/srcs/aircompressor-0.8-sources.jar">
+					<artifact name="aircompressor" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="102108" time="0" location="/home/spark/.ivy2/cache/io.airlift/aircompressor/srcs/aircompressor-0.8-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/airlift/aircompressor/0.8/aircompressor-0.8-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1939,7 +1941,7 @@
 				<metadata-artifact status="no" details="" size="7922" time="0" location="/home/spark/.ivy2/cache/org.apache.parquet/parquet-hadoop/ivy-1.8.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-hadoop/1.8.2/parquet-hadoop-1.8.2.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="parquet-hadoop" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="153678" time="1286" location="/home/spark/.ivy2/cache/org.apache.parquet/parquet-hadoop/srcs/parquet-hadoop-1.8.2-sources.jar">
+					<artifact name="parquet-hadoop" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="153678" time="0" location="/home/spark/.ivy2/cache/org.apache.parquet/parquet-hadoop/srcs/parquet-hadoop-1.8.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-hadoop/1.8.2/parquet-hadoop-1.8.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1951,7 +1953,7 @@
 				<metadata-artifact status="no" details="" size="7134" time="0" location="/home/spark/.ivy2/cache/org.apache.parquet/parquet-jackson/ivy-1.8.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-jackson/1.8.2/parquet-jackson-1.8.2.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="parquet-jackson" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="4837" time="674" location="/home/spark/.ivy2/cache/org.apache.parquet/parquet-jackson/srcs/parquet-jackson-1.8.2-sources.jar">
+					<artifact name="parquet-jackson" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4837" time="0" location="/home/spark/.ivy2/cache/org.apache.parquet/parquet-jackson/srcs/parquet-jackson-1.8.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-jackson/1.8.2/parquet-jackson-1.8.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1963,7 +1965,7 @@
 				<metadata-artifact status="no" details="" size="4191" time="0" location="/home/spark/.ivy2/cache/org.apache.parquet/parquet-format/ivy-2.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-format/2.3.1/parquet-format-2.3.1.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="2.3.1" rev-constraint-default="2.3.1" rev-constraint-dynamic="2.3.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="parquet-format" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="92949" time="712" location="/home/spark/.ivy2/cache/org.apache.parquet/parquet-format/srcs/parquet-format-2.3.1-sources.jar">
+					<artifact name="parquet-format" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="92949" time="0" location="/home/spark/.ivy2/cache/org.apache.parquet/parquet-format/srcs/parquet-format-2.3.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-format/2.3.1/parquet-format-2.3.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1975,7 +1977,7 @@
 				<metadata-artifact status="no" details="" size="8053" time="0" location="/home/spark/.ivy2/cache/org.apache.parquet/parquet-column/ivy-1.8.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-column/1.8.2/parquet-column-1.8.2.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="parquet-column" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="251090" time="2222" location="/home/spark/.ivy2/cache/org.apache.parquet/parquet-column/srcs/parquet-column-1.8.2-sources.jar">
+					<artifact name="parquet-column" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="251090" time="0" location="/home/spark/.ivy2/cache/org.apache.parquet/parquet-column/srcs/parquet-column-1.8.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-column/1.8.2/parquet-column-1.8.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1987,7 +1989,7 @@
 				<metadata-artifact status="no" details="" size="6960" time="0" location="/home/spark/.ivy2/cache/org.apache.parquet/parquet-encoding/ivy-1.8.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-encoding/1.8.2/parquet-encoding-1.8.2.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="parquet-encoding" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="175833" time="1152" location="/home/spark/.ivy2/cache/org.apache.parquet/parquet-encoding/srcs/parquet-encoding-1.8.2-sources.jar">
+					<artifact name="parquet-encoding" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="175833" time="0" location="/home/spark/.ivy2/cache/org.apache.parquet/parquet-encoding/srcs/parquet-encoding-1.8.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-encoding/1.8.2/parquet-encoding-1.8.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1999,7 +2001,7 @@
 				<metadata-artifact status="no" details="" size="6909" time="0" location="/home/spark/.ivy2/cache/org.apache.parquet/parquet-common/ivy-1.8.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-common/1.8.2/parquet-common-1.8.2.pom"/>
 				<caller organisation="default" name="spark-streaming-kafka-scylladb$sources" conf="compile-internal, compile, provided, optional" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="parquet-common" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="34190" time="736" location="/home/spark/.ivy2/cache/org.apache.parquet/parquet-common/srcs/parquet-common-1.8.2-sources.jar">
+					<artifact name="parquet-common" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="34190" time="0" location="/home/spark/.ivy2/cache/org.apache.parquet/parquet-common/srcs/parquet-common-1.8.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-common/1.8.2/parquet-common-1.8.2-sources.jar"/>
 					</artifact>
 				</artifacts>

@@ -4,7 +4,7 @@
 		module="spark-streaming-kafka-scylladb_2.11"
 		revision="0.1"
 		status="integration"
-		publication="20190521182116"
+		publication="20190521195303"
 	>
 		<description>
 		spark-streaming-kafka-scylladb
@@ -36,6 +36,7 @@
 		<dependency org="org.apache.spark" name="spark-sql_2.11" rev="2.3.0" conf="compile->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-streaming_2.11" rev="2.3.0" conf="compile->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-streaming-kafka-0-10_2.11" rev="2.3.0" conf="compile->default(compile)"/>
+		<dependency org="org.apache.spark" name="spark-sql-kafka-0-10_2.11" rev="2.3.0" conf="compile->default(compile)"/>
 		<dependency org="com.datastax.spark" name="spark-cassandra-connector_2.11" rev="2.3.0" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
