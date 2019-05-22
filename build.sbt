@@ -11,10 +11,9 @@ evictionWarningOptions in update := EvictionWarningOptions.default.withWarnTrans
 
 
 libraryDependencies ++= Seq(
-  "org.apache.spark" %% "spark-core" % sparkVersion,
-  "org.apache.spark" %% "spark-sql" % sparkVersion,
-  "org.apache.spark" %% "spark-streaming" % sparkVersion,
-  "org.apache.spark" %% "spark-streaming-kafka-0-10" % sparkVersion,
-  "org.apache.spark" %% "spark-sql-kafka-0-10" % sparkVersion,
+  "org.apache.spark" %% "spark-sql" % "2.2.0",
+  "org.apache.spark" %% "spark-streaming" % "2.2.0",
+//  "org.apache.spark" %% "spark-streaming-kafka-0-10" % sparkVersion,
+  "org.apache.spark" %% "spark-sql-kafka-0-10" % "2.2.0",
   "com.datastax.spark" %% "spark-cassandra-connector" % sparkVersion
 )
