@@ -1,8 +1,8 @@
 package example.spark.kafka.scyllaDB
 
 /**
-  * title           : ScyllaSinkProvider
-  * description     :
+  * title           : ScyllaSink
+  * description     : Custom sink to ScyllaDB
   * author          : Jessiane Andrade
   * email           : syane_andrade@outlook.com
   * date            : 20190520

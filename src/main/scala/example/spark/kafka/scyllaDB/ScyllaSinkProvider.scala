@@ -3,7 +3,7 @@ package example.spark.kafka.scyllaDB
 
 /**
   * title           : ScyllaSinkProvider
-  * description     :
+  * description     : Custom Provider sink to ScyllaDB
   * author          : Jessiane Andrade
   * email           : syane_andrade@outlook.com
   * date            : 20190520

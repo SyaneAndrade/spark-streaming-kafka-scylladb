@@ -2,12 +2,12 @@ package example.spark.kafka
 
 /**
   * title           : Initializer
-  * description     :
+  * description     : This object treats main rules of aplication
   * author          : Jessiane Andrade
   * email           : syane_andrade@outlook.com
   * date            : 20190520
   * usage           :
-  * notes           :
+  * notes           : Kafka topics and ScyllaDB need to be configured in config.MetaInf
   * */
 
 

@@ -4,7 +4,7 @@
 		module="spark-streaming-kafka-scylladb-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20190521194438"
+		publication="20190521231132"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>
