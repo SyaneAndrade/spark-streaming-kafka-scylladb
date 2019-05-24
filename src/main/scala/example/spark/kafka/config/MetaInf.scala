@@ -16,8 +16,8 @@ object MetaInf {
   val kafkaTopic = "CLIENTE"
 
   //Configuracao para conexao do ScyllaDB
-  val scyllakeyspace = "example_spark"
-  val scyllaNameTable = "dadosclient"
+  val scyllakeyspace = "timeline"
+  val scyllaNameTable = "event"
   val scyllaCluster = "Test Cluster"
 
 }

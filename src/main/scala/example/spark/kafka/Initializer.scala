@@ -12,15 +12,15 @@ package example.spark.kafka
 
 
 import com.datastax.spark.connector.cql.CassandraConnectorConf
+import example.spark.kafka.config.MetaInf
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.cassandra._
 import org.apache.spark.sql.streaming.OutputMode
-import example.spark.kafka.config.MetaInf
 
 object Initializer extends App {
 
   val spark = SparkSession.builder
-    .appName("SparkKafkaScylla")
+    .appName("spark-streaming-kafka-scylladb")
     .getOrCreate()
     .setCassandraConf("scylla",
       Map(CassandraConnectorConf.ConnectionHostParam.name -> MetaInf.scyllaCluster))
@@ -32,9 +32,9 @@ object Initializer extends App {
     .option("subscribe", MetaInf.kafkaTopic)
     .load()
     .selectExpr("CAST(key AS STRING) AS symbol",
-      "CAST(value AS STRING) AS data",
-      "CAST(timestamp AS TIMESTAMP) AS day")
-    .select("data", "day")
+      "CAST(value AS STRING) AS event_name",
+      "CAST(timestamp AS STRING) AS domain")
+    .select("event_name", "domain")
     .writeStream
 //    .format("console")
     .format("example.spark.kafka.scyllaDB.ScyllaSinkProvider")
@@ -45,8 +45,8 @@ object Initializer extends App {
       "table" -> MetaInf.scyllaNameTable,
       "checkpointLocation" -> "/tmp/checkpoints"
     )
-    )
-    .start()
+    ).start()
+
 
   sparkReaderStream.awaitTermination()
 }
